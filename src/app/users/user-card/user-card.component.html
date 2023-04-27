@@ -1,0 +1,12 @@
+<mat-card class="mat-elevation-z2">
+  <mat-card-header>
+    <mat-card-title>{{ data.name }}</mat-card-title>
+    <mat-card-subtitle>{{ data.email }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ data.address.street }}, {{ data.address.suite }},
+      {{ data.address.city }}, {{ data.address.zipcode }}
+    </p>
+  </mat-card-content>
+</mat-card>

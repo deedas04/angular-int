@@ -2,10 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class UsersService {
+export class EmployeesService {
   constructor(private http: HttpClient) {}
 
-  getUsers() {
-    return this.http.get('https://jsonplaceholder.typicode.com/users');
+  getEmployees() {
+    return this.http.get(
+      'https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001'
+    );
   }
 }
