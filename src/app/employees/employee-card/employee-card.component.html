@@ -1,10 +1,18 @@
-<mat-card class="mat-elevation-z2">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image">
-      <img [src]="data.imageUrl" width="100%" />
-    </div>
-    <mat-card-title>{{ data.firstName }} {{ data.lastName }}</mat-card-title>
-    <mat-card-subtitle>{{ data.email }}</mat-card-subtitle>
-    <mat-card-subtitle>{{ data.contactNumber }}</mat-card-subtitle>
-  </mat-card-header>
-</mat-card>
+<div
+  [appShadow]="'gray'"
+  [appShadowX]="'2px'"
+  [appShadowY]="'2px'"
+  [appShadowBlur]="'10px'"
+>
+  <mat-card class="mat-elevation-z2">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+        <img [src]="data.imageUrl" width="100%" />
+      </div>
+      <mat-card-title>{{ data.firstName }} {{ data.lastName }}</mat-card-title>
+      <mat-card-subtitle>{{ data.email }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ data.contactNumber }}</mat-card-subtitle>
+      <mat-card-subtitle>{{randomNumber() }}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>

@@ -1,3 +1,4 @@
+<div *ngIf="isLoading">Please wait....</div>
 <div *ngFor="let emp of employees; let i = index" class="m-3">
   <app-employee-card [data]="emp"></app-employee-card>
 </div>

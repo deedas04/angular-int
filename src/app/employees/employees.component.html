@@ -1,1 +1,4 @@
-<app-employee-list></app-employee-list>
+<app-employees-filter
+  (searchTerm)="_searchTerm = $event"
+></app-employees-filter>
+<app-employee-list [employeeSearchTerm]="_searchTerm"></app-employee-list>
