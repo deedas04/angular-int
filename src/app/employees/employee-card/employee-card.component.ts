@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  OnInit,
-} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-employee-card',
@@ -17,6 +12,8 @@ export class EmployeeCardComponent implements OnInit {
   ngOnInit() {}
 
   randomNumber() {
-    return Math.floor(Math.random() * 25);
+    let rand = Math.floor(Math.random() * 5);
+    console.log('Random:' + rand);
+    return rand;
   }
 }

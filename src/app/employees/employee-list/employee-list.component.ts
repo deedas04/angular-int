@@ -6,6 +6,7 @@ import {
   OnInit,
 } from '@angular/core';
 import { EmployeesService } from '../employees.service';
+import {} from 'rxjs/operators'
 
 @Component({
   selector: 'app-employee-list',
@@ -38,9 +39,11 @@ export class EmployeeListComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   loadEmployees() {
-    this.empService.getEmployees().subscribe((employees: any) => {
-      console.log(employees);
-      this.employees = employees;
-    });
+    this.empService
+      .getEmployees()
+      .subscribe((employees: any) => {
+        console.log(employees);
+        this.employees = employees;
+      });
   }
 }

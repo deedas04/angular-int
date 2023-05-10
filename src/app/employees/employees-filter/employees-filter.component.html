@@ -5,6 +5,6 @@
     [theme]="theme"
     [placeholder]="'Enter name or email'"
     [(ngModel)]="_searchTerm"
-    (ngModelChange)="onSearch()"
+    (ngModelChange)="onSearch($event)"
   />
 </ibm-label>
