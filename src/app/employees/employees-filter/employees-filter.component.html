@@ -1,5 +1,10 @@
-<mat-form-field appearance="fill" class="w-100">
-  <mat-label>Search employess by name, email</mat-label>
-  <input matInput [(ngModel)]="_searchTerm" (ngModelChange)="onSearch()" />
-  <mat-icon matPrefix>search</mat-icon>
-</mat-form-field>
+<ibm-label class="m-3">
+  {{ 'Search' }}
+  <input
+    ibmText
+    [theme]="theme"
+    [placeholder]="'Enter name or email'"
+    [(ngModel)]="_searchTerm"
+    (ngModelChange)="onSearch()"
+  />
+</ibm-label>

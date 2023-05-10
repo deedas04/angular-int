@@ -16,6 +16,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../shared/shared/shared.module';
+import { CarbonModule } from '../carbon.module';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { SharedModule } from '../shared/shared/shared.module';
     MatButtonToggleModule,
     MatIconModule,
     SharedModule,
+    CarbonModule,
   ],
   declarations: [
     EmployeesComponent,
