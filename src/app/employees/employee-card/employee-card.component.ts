@@ -12,7 +12,7 @@ export class EmployeeCardComponent implements OnInit {
   ngOnInit() {}
 
   randomNumber() {
-    let rand = Math.floor(Math.random() * 5);
+    let rand = Math.floor(Math.random() * 1000);
     console.log('Random:' + rand);
     return rand;
   }

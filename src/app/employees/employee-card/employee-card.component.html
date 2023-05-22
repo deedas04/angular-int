@@ -1,17 +1,12 @@
 <div>
   <mat-card class="mat-elevation-z2">
     <mat-card-header>
-      <div
-        appColorMe
-        [value]="randomNumber()"
-        mat-card-avatar
-        class="d-flex align-items-center"
-      >
+      <div mat-card-avatar class="d-flex align-items-center">
         {{ data.firstName | slice: 0:1 }} {{ data.lastName | slice: 0:1 }}
       </div>
       <mat-card-title>{{ data.firstName }} {{ data.lastName }}</mat-card-title>
       <mat-card-subtitle>{{ data.email }}</mat-card-subtitle>
-      <mat-card-subtitle>{{ data.contactNumber }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ randomNumber() }}</mat-card-subtitle>
     </mat-card-header>
   </mat-card>
 </div>
